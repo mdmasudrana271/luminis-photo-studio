@@ -25,7 +25,7 @@ const Works = () => {
           <div className="w-4 h-4 rounded-full animate-pulse dark:bg-violet-400"></div>
         </div>
       ) : (
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 w-9/12 mx-auto gap-5">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 w-11/12 mx-auto gap-5">
           {services.map((item) => (
             <WorksCard key={item._id} item={item}></WorksCard>
           ))}

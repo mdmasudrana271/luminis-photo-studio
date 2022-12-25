@@ -98,6 +98,7 @@ const AddedReviews = () => {
             <textarea
               placeholder="Your Feedback"
               name="feedback"
+              required
               className="w-full rounded-md input input-bordered"
             ></textarea>
           </div>

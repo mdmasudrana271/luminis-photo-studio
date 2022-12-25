@@ -5,11 +5,11 @@ import { Link } from "react-router-dom";
 const WorksCard = ({ item }) => {
   const { img, title, description, _id, price } = item;
   return (
-    <div className="card w-full bg-base-100 shadow-xl">
+    <div className="card w-full bg-base-100 shadow-xl" data-aos="flip-left" data-aos-delay="50" data-aos-easing="ease-in-out">
       <figure className="px-10 pt-10">
         <PhotoProvider>
           <PhotoView src={img}>
-            <img src={img} alt="Shoes" className="rounded-xl" />
+            <img src={img} alt="Shoes" className="rounded-xl cursor-pointer" />
           </PhotoView>
         </PhotoProvider>
       </figure>

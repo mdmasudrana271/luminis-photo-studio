@@ -6,12 +6,12 @@ const ServiceCard = ({ item }) => {
   const { title, img, description, _id, price } = item;
 
   return (
-    <div>
+    <div data-aos="flip-left" data-aos-delay="50" data-aos-easing="ease-in-out">
       <div className="card w-full bg-base-100 shadow-xl">
         <figure className="px-10 pt-10">
           <PhotoProvider>
             <PhotoView src={img}>
-            <img src={img} alt="Shoes" className="rounded-xl" />
+              <img src={img} alt="Shoes" className="rounded-xl" />
             </PhotoView>
           </PhotoProvider>
         </figure>
@@ -24,7 +24,9 @@ const ServiceCard = ({ item }) => {
           </p>
           <p className="font-bold">Price: {price}</p>
           <div className="card-actions">
-          <Link to={`/ServiceDetails/${_id}`}><button className="btn btn-primary">Details</button></Link>
+            <Link to={`/ServiceDetails/${_id}`}>
+              <button className="btn btn-primary">Details</button>
+            </Link>
           </div>
         </div>
       </div>

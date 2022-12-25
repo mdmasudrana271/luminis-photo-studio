@@ -16,8 +16,6 @@ const Header = () => {
     }
   };
 
-  console.log(user);
-
   return (
     <div className="navbar bg-base-100">
       <div className="navbar-start">
@@ -58,30 +56,33 @@ const Header = () => {
               <Link to="/home">Home</Link>
             </li>
             <li>
-              <Link to="/blog">Blogs</Link>
-            </li>
-            <li>
               <Link to="/myreviews">My Reviews</Link>
             </li>
             <li>
               <Link to="/addservice">Add Service</Link>
             </li>
+            <li>
+              <Link to="/contact">Contact us</Link>
+            </li>
+            <li>
+              <Link to="/blog">Blogs</Link>
+            </li>
             {user ? (
-            <>
-              <li onClick={logOut}>
-                <Link>Logout</Link>
-              </li>
-            </>
-          ) : (
-            <>
-              <li>
-                <Link to="/login">Login</Link>
-              </li>
-              <li>
-                <Link to="/register">Register</Link>
-              </li>
-            </>
-          )}
+              <>
+                <li onClick={logOut}>
+                  <Link>Logout</Link>
+                </li>
+              </>
+            ) : (
+              <>
+                <li>
+                  <Link to="/login">Login</Link>
+                </li>
+                <li>
+                  <Link to="/register">Register</Link>
+                </li>
+              </>
+            )}
             <div
               onClick={handleTheme}
               className="cursor-pinter flex items-center justify-start mx-3"
@@ -103,13 +104,16 @@ const Header = () => {
             <Link to="/home">Home</Link>
           </li>
           <li>
-            <Link to="/blog">Blogs</Link>
-          </li>
-          <li>
             <Link to="/myreviews">My Reviews</Link>
           </li>
           <li>
             <Link to="/addservice">Add Service</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact us</Link>
+          </li>
+          <li>
+            <Link to="/blog">Blogs</Link>
           </li>
           {user ? (
             <>
@@ -118,10 +122,15 @@ const Header = () => {
               </li>
               <div className="flex items-center gap-2">
                 <li>{user?.displayName}</li>
-                {
-                  user.photoURL ? <img className="w-8 h-8 rounded-full" src={user?.photoURL} alt="" />
-                  : <FaUserAlt></FaUserAlt>
-                }
+                {user.photoURL ? (
+                  <img
+                    className="w-8 h-8 rounded-full"
+                    src={user?.photoURL}
+                    alt=""
+                  />
+                ) : (
+                  <FaUserAlt></FaUserAlt>
+                )}
               </div>
             </>
           ) : (

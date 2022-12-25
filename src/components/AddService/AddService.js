@@ -55,6 +55,7 @@ const AddService = () => {
               name="title"
               placeholder="Service Title"
               className="w-full rounded-md input input-bordered"
+              required
             />
           </div>
           <div className="col-span-full sm:col-span-3">
@@ -64,6 +65,7 @@ const AddService = () => {
               name="photoURL"
               placeholder="Photo Link"
               className="w-full rounded-md input input-bordered"
+              required
             />
           </div>
           <div className="col-span-full sm:col-span-3">
@@ -74,6 +76,7 @@ const AddService = () => {
               placeholder="Price"
               className="w-full rounded-md input input-bordered"
               defaultValue="$"
+              required
             />
           </div>
           <div className="col-span-full">
@@ -82,6 +85,7 @@ const AddService = () => {
               placeholder="Description"
               name="description"
               className="w-full rounded-md input input-bordered"
+              required
             ></textarea>
           </div>
           <input
