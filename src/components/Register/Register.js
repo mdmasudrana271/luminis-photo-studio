@@ -3,7 +3,6 @@ import React, { useContext, useState } from "react";
 import { FaEye, FaEyeSlash, FaGithub, FaGoogle } from "react-icons/fa";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import toast, { Toaster } from "react-hot-toast";
-import { useEffect } from "react";
 import { AuthContext } from "../../context/AuthProvide";
 import useTitle from "../../hooks/useTitle";
 
@@ -17,7 +16,6 @@ const Register = () => {
     updateUserProfile,
     error,
     setError,
-    user,
   } = useContext(AuthContext);
 
   // use location to redirect

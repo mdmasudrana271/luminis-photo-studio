@@ -24,12 +24,8 @@ const Footer = () => {
         </ul>
         <div className="flex flex-col self-center text-sm text-center md:block lg:col-start-1 md:space-x-6">
           <span>©2022 All rights reserved</span>
-          <a rel="noopener noreferrer" href="#">
             <span>Privacy policy</span>
-          </a>
-          <a rel="noopener noreferrer" href="#">
             <span>Terms of service</span>
-          </a>
         </div>
       </div>
     </footer>

@@ -16,7 +16,7 @@ const Services = () => {
         setServices(data);
         setLoading(false);
       });
-  }, []);
+  }, [setServices]);
 
   return (
     <div>
