@@ -1,20 +1,14 @@
 import React from "react";
 import AnimatedText from "react-animated-text-content";
-import logo from "../../.././assets/image/about-me.jpg";
+import logo from "../../.././assets/image/banner2.jpg";
 
 const About = () => {
   return (
-    <div className="md:flex justify-center items-center w-11/12 mx-auto gap-5 my-10">
-      <div className="md:w-2/4">
-        <img className="rounded-full" src={logo} alt="" />
+    <div className="md:flex justify-between items-center w-11/12 mx-auto gap-5 my-10">
+      <div className="md:w-1/2 mr-4">
+        <img className="rounded-xl" src={logo} alt="" />
       </div>
-      <div className="md:w-2/4">
-        {/* <h1 className="text-3xl mb-5 font-bold">
-          Hi there, I am Anna Rosetti. I am photographer, traveler and I love to
-          capture your unique moments.
-        </h1> */}
-
-        
+      <div className="md:w-1/2">
           <AnimatedText
             type="words" // animate words or chars
             animation={{
