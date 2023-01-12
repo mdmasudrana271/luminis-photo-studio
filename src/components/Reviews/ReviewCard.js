@@ -6,8 +6,8 @@ const ReviewCard = ({ review }) => {
   return (
     <div data-aos="zoom-in" data-aos-delay="50" data-aos-easing="ease-in-out">
       <div className="flex flex-col max-w-sm mx-4 my-6 shadow-lg">
-        <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 dark:bg-gray-900">
-          <p className="relative px-6 py-1 text-lg italic text-center dark:text-gray-100">
+        <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 bg-gradient-to-b from-blue-400 to-transparent h-72">
+          <p className="relative px-6 py-1 text-lg italic text-center text-black">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
