@@ -13,7 +13,7 @@ const Home = () => {
   useTitle("LUMINIS PHOTO STUDIO");
 
   return (
-    <div>
+    <div className="overflow-hidden">
       <div className="mb-10">
         <Banner></Banner>
       </div>
