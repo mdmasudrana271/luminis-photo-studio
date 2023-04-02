@@ -1,31 +1,36 @@
 import React from "react";
+import { FaFacebook, FaGithub, FaTwitter } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="dark:bg-gray-800 dark:text-gray-50">
-      <div className="container flex flex-col p-4 mx-auto md:p-8 lg:flex-row divide-gray-400">
-        <ul className="self-center py-6 space-y-4 text-center sm:flex sm:space-y-0 sm:justify-around sm:space-x-4 lg:flex-1 lg:justify-start">
-          <li>
-            <Link to="/home">Home</Link>
-          </li>
-          <li>
-            <Link to="/myreviews">My Reviews</Link>
-          </li>
-          <li>
-            <Link to="/addservice">Add Service</Link>
-          </li>
-          <li>
-            <Link to="/blog">Blogs</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact us</Link>
-          </li>
-        </ul>
-        <div className="flex flex-col self-center text-sm text-center md:block lg:col-start-1 md:space-x-6">
-          <span>©2022 All rights reserved</span>
-            <span>Privacy policy</span>
-            <span>Terms of service</span>
+    <footer className="footer p-10 justify-around bg-base-300 text-base-content">
+      <div>
+        <span className="footer-title">Services</span>
+        <p>photography</p>
+        <p>Design</p>
+        <p>Marketing</p>
+        <p>Advertisement</p>
+      </div>
+      <div>
+        <span className="footer-title">Company</span>
+        <Link to="/about" className="link link-hover">About us</Link>
+        <Link to="/contact" className="link link-hover">Contact</Link>
+        <Link to="/blog" className="link link-hover">Blog</Link>
+        <Link to="/services" className="link link-hover">Services</Link>
+      </div>
+      <div>
+        <span className="footer-title">Social</span>
+        <div className="grid grid-flow-col gap-4 text-2xl">
+          <Link to="https://www.facebook.com/mdabdullamasud.rana/">
+            <FaFacebook className="text-blue-500"></FaFacebook>
+          </Link>
+          <Link to="https://github.com/mdmasudrana271">
+            <FaGithub></FaGithub>
+          </Link>
+          <Link to="https://twitter.com/mdmasud83732961">
+            <FaTwitter className="text-blue-500"></FaTwitter>
+          </Link>
         </div>
       </div>
     </footer>
